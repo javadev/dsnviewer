@@ -1,2 +1,3 @@
 # dsnviewer
-Java/Swing application to view DSN files of the TinyCad
+The java/swing application to view DSN files
+
