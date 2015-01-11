@@ -1,17 +1,18 @@
 package com.github.dsnviewer.model;
 
 public class Grid {
-  private int spacing = 1, snap = 1;
+  private int snap = 1;
+  private float spacing = 1;
   public int getSnap() {
     return snap;
   }
   public void setSnap(String s) {
     this.snap = Integer.parseInt(s);
   }
-  public int getSpacing() {
+  public float getSpacing() {
     return spacing;
   }
   public void setSpacing(String s) {
-    this.spacing = Integer.parseInt(s);
+    this.spacing = Float.valueOf(s);
   }
 }
