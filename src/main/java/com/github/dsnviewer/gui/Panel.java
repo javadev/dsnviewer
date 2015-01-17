@@ -548,6 +548,15 @@ public class Panel extends JPanel implements ChangeListener, MouseMotionListener
   }
   
   private void paintSymbolPolygons(Graphics g, int i, int j) {
+    Color savecolor = g.getColor();
+    g.setColor(Color.GREEN);
+          g.drawLine(
+              Math.round((tc.getSymbols().get(i).getPos().getX() - 1)*axy),
+              Math.round((tc.getSymbols().get(i).getPos().getY() - 1)*axy),
+              Math.round((tc.getSymbols().get(i).getPos().getX() + 1)*axy),
+              Math.round((tc.getSymbols().get(i).getPos().getY() + 1)*axy)
+            );
+    g.setColor(savecolor);
     // Нарисовать POLYGON линии
     for (Polygon polygon : tc.getSymbolDefs().get(j).getTinyCadSymbol().getPolygons()) {
       Pos dp = null;

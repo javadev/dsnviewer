@@ -36,7 +36,10 @@ public class Symbol {
   }            
   public void setRotate(String s) {
     rotate = Integer.parseInt(s);
-  }            
+  }
+  public int getRotate() {
+    return rotate;
+  }
   public void setScalex(String s) {
     scale_x = Float.parseFloat(s);
   }
