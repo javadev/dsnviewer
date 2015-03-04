@@ -25,7 +25,6 @@ public class PropertyPanel extends JPanel implements ChangeListener {
   ModelDSN md;
   
   /**
-   * @param field2s
    */
   public PropertyPanel() {
     super();
